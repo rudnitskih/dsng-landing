@@ -1,20 +1,13 @@
-# dsng
+# Mockup DSNG
+
+To look the page, click to the [link][1]
+
+[1]: https://ignatsemchuk.github.io/dsng/
+
+##Features
+
+All aspect ratio calculate from the mockup with 1500px width
 
 
-## Fonts for template
-+ first line
-    1. logo has
-    ```
-  .ASSOCIATES_STUDIO_DESIGN {
-  font-size: 18px;
-  font-family: "RobotoCondensed";
-  color: rgb(57, 61, 60);
-  text-transform: uppercase;
-  line-height: 1;
-  position: absolute;
-  left: 167.096px;
-  top: 276.872px;
-  z-index: 252;
-  }
-  ```
-  
+
+
