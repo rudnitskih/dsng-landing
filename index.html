@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <script>
+  // Look for .hamburger
+  window.onload = function() {
+    var hamburger = document.querySelector(".hamburger");
+    var navigation = document.querySelector(".navigation-content");
+    // On click
+    hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+    navigation.classList.toggle("show");
+});
+};
+</script>
+</head>
+<body>
+    <main class="wrapper">
+        <header class="header-container">
+            <div class="logo-container">
+                <div class="header-img">
+                    <img src="images/header_chair.png" alt="chair">
+                </div>
+
+                <div class="header-logo">
+                    <div class="header-logo-img">
+                        <img src="images/logo/logo_DSGN.png" alt="logo">
+                    </div>
+                    <h1 class="header-logo-name">Associates studio design</h1>
+                    <ul class="header-logo-socials">
+                        <li class="social-icon">
+                            <a href="javascript:void(0);"><img src="images/icons/facebook_icon.png" alt="facebook icon"></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="javascript:void(0);"><img src="images/icons/twitter_icon.png" alt="twitter icon"></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="javascript:void(0);"><img src="images/icons/linkedin_icon.png" alt="linkedin icon"></a>
+                        </li>
+                        <li class="social-icon">
+                            <a href="javascript:void(0);"><img src="images/icons/google_icon.png" alt="google+ icon"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-nav">
+                <div class="strikethrough"></div>
+                <div class="navigation">
+                    <nav class="navigation-content">
+                        <!--navigation goes here-->
+                        <a class="navigation-list" href="javascript:void(0);">Home</a>
+                        <a class="navigation-list" href="javascript:void(0);">Projects</a>
+                        <a class="navigation-list" href="javascript:void(0);">Studio</a>
+                        <a class="navigation-list" href="javascript:void(0);">News</a>
+                        <a class="navigation-list" href="javascript:void(0);">Contact</a>
+                    </nav>
+                    <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation-content">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+                <address class="address">
+                    <span>90802 California</span>
+                    <span>Long beach</span>
+                    <span>PO Box 68789</span>
+                    <span>300 East Ocean</span>
+                    <span>Boulev</span>                       
+                </address>  
+
+                <address class="contacts">
+                    <span>+64 9 345 6758 info@dsgn-studio</span>
+                </address>
+            </div>
+        </header>
+
+        <section class="projects">
+            <div class="child">first</div>
+            <div class="child">2</div>
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="child">7</div>
+            <div class="child">8</div>
+            <div class="child">9</div>
+            <div class="child">last</div>
+        </section>
+    </main>
+
+
+</body>
+</html>
