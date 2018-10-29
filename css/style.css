@@ -6,8 +6,9 @@
   /*   fonts   */
   --main-font: "Roboto Condensed", sans-serif;
 
+
   /*   colors   */
-  --header-bg: hsl(68, 17%, 91%);
+  --header-: hsl(68, 17%, 91%);
   --header-highlight: hsl(172, 47%, 65%);
   --header-bg-color: rgba(16,25,41,0.51);
   --text-dark: #333;
@@ -23,10 +24,14 @@
 
 * {
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 html {
-  font-family: var(--main-font);
+  font-family:    var(--main-font);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1;
 }
 
 a {
@@ -38,6 +43,10 @@ img {
   display: block;
 }
 
+.upcase {
+  text-transform: uppercase;
+}
+
 /*Header section*/
 
 .header-container {
@@ -45,12 +54,12 @@ img {
   grid-template-columns: repeat(30, 1fr);
 }
 
-.logo-container {
+.content-header {
   grid-column: span 21;
   display: grid;
   /* left margin, logo, image proportions in the header*/
   grid-template-columns: 16% 16% 1fr;
-  position: relative;
+  /*position: relative;*/
   justify-content: center;
   align-items: start;
   background-color: #f7f7f7;
@@ -126,14 +135,14 @@ img {
 
 /* Navigation section */
 
-.header-nav {
+.header-menu {
   grid-column: span 9;
   background-color: var(--header-highlight);
   /*padding-top: 100%;*/
   position: relative;
   /*overflow: hidden;*/
 }
-
+/* added line*/
 .strikethrough {
   position: absolute;
   top:0;
@@ -152,22 +161,21 @@ img {
   height: 2px;
   transform: rotate(-47.55deg);
   transform-origin: 0;
-  z-index: 0;
+  /*z-index: -1;*/
 }
 
 .navigation {
-  --hover-color: rgb(248, 194, 85);
+  --hover-color: hsl(40, 82%, 58%);
   --animation: all .3s ease-in-out;
 
   display: flex;
   justify-content: center;
   position: relative;
 }
-
+/* look hamburger.css file*/
 .hamburger {
   margin: 10%;
 }
-
 .hamburger.is-active {
   opacity: 1; 
   background-color: var(--hover-color);
@@ -194,14 +202,17 @@ img {
   overflow-x: visible;
 }
 
-.navigation-list {
-  flex: 1;
+.navigation-item {
   display: flex;
   justify-content: center;
   color: #fff;
 }
 
-.navigation-list:hover {
+.section-item {
+  flex: 1;
+  flex-flow: row nowrap;
+}
+.section-item:hover {
   font-size: 1.5em;
 }
 
@@ -210,58 +221,233 @@ img {
   opacity: 1;
 }
 
+.adrress {
+  display:;
+}
 
-.projects {
+/*Projects section*/
+.section-projects {
   display: grid;
-  grid-gap: 5px;
   grid-template-columns: repeat(30, 1fr);
-  grid-auto-rows: minmax(50px, 1fr);
-  grid-auto-flow: row;
+  grid-auto-rows: minmax(min-content, auto);
 }
-.child:nth-child(odd) {
-  background-color: cyan;
+
+/* For every defined component add container-[child name].
+ * There are define color, aspect ratio padding, special elements or
+ * unique design 
+ */
+ .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* you need recalculate padding-bottom for every child = height/width%
+   * default value 1:1 = 100%
+   */
+   padding-bottom: var(--aspect-ratio);
+   background-color: var(--bg-container-color);
+ }
+
+ .project-item {
+   flex: 1;
+   flex-flow: column nowrap;
+   position: relative;
+ }
+ .project-item::before {
+  content: "";
+  position: absolute;
+  left: -35%;
+  width: 100%;
+  height:100%;
+  opacity: 0;
+  background-image: url("../images/icons/arrow_icon_white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.child:nth-child(even) {
-  background-color: tomato;
+.project-item:hover {
+  color: black;
 }
-.child:first-child {
-  grid-column: span 8;
-  grid-row: span 10;
+.project-item:hover::before {
+  opacity: 1;
 }
-.child:last-child {
-  grid-column: span 8;
-  grid-row: span 6;
-  order: 1;
-}
-.child:nth-child(2) {
+
+
+
+
+
+/* projects section */
+/* header element */
+.container-projects {
+  --bg-container-color:    hsl(40, 82%, 58%);
+  --aspect-ratio:          111%;
+
   grid-column: span 9;
-  grid-row: span 10;
+  grid-row: 1 / 3;
 }
-.child:nth-child(3) {
-  grid-column: span 8;
-  grid-row: span 5;
+
+.content-projects {
+  position: absolute;
+  /* define line length by the width*/
+  width: 150%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  transform-origin: 0 100%;
+  /* making diagonal */
+  transform: rotate(-48deg);
+  transition-duration: 0.3s;
+  /* it is made container for left and right content */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--bg-container-color);
 }
-.child:nth-child(4) {
-  grid-column: span 8;
-  grid-row: span 9;
+
+.nav-projects {
+  margin-left: 10%;
+  transform-origin: 60% 0;
+  transform: rotate(48deg);
+  transition-duration: 0.3s;
+  font-size: 1vw;
 }
-.child:nth-child(5) {
-  grid-column: span 5;
-  grid-row: span 9;
+
+.container-name {
+  position: absolute;
+  font-size: 3.2vw;
+  font-weight: 400;
+  color:#fefefe;
+  transform-origin: 0;
+  transform: rotate(48deg) translate(35%, 30%);
+  transition-duration: 0.3s;
 }
-.child:nth-child(6) {
+
+.content-projects:hover {
+  transition-duration: 0.3s;
+  transform: rotate(-48deg) translate(0%, 20%);
+}
+
+.content-projects:hover .nav-projects {
+  transition-duration: 0.3s;
+  transform: scale(3) rotate(48deg) translate(-15%, -70%);
+}
+
+.content-projects:hover .container-name {
+  transition-duration: 0.3s;
+  transform: scale(0.7) rotate(48deg) translate(40%, 60%);
+  color: transparent;
+  text-shadow: 0 0 0.5em rgba(255,255,255,0.9);
+}
+
+
+/* 2 element */
+.container-fondue {
+  --bg-container-color:    white;
+  --aspect-ratio:          83.3%;
+
   grid-column: span 12;
-  grid-row: span 9;
+  grid-row: 1 / 3;
+  background-image: url("../images/foundue_lamp.png");
+  display: grid;
+  grid-template-columns: 16.7% fit-content 1fr;
+  grid-template-rows: repeat(4, auto);
 }
-.child:nth-child(7) {
-  grid-column: span 8;
-  grid-row: span 5;
+.content {
+  position: absolute;
 }
-.child:nth-child(9) {
-  grid-column: span 12;
-  grid-row: span 6;
+.project-rating {
+  color: red;
+  font-size: 1vw;
 }
-.child:nth-child(8) {
-  grid-column: span 5;
-  grid-row: span 6;
+.heart-rating {
+  width: 4%;
+}
+
+/* 3 element */
+.container-potter {
+  --bg-container-color:    white;
+  --aspect-ratio:          55.5%;
+  background-image: url("../images/pilesos_retina.png");
+
+  grid-column: span 9;
+  grid-row: 1;
+}
+.content {
+  position: absolute;
+}
+/* 4 element */
+.container-louis {
+  --bg-container-color:    red;
+  --aspect-ratio:          150%;
+
+  grid-column: span 6;
+  grid-row: 3 / 5;
+}
+.content {
+  position: absolute;
+}
+/* 5 element */
+.container-p22 {
+  --bg-container-color:    yellow;
+  --aspect-ratio:          60%;
+
+  grid-column: span 15;
+  grid-row: 3 / 5;
+}
+.content {
+  position: absolute;
+}
+/* 6 element */
+.container-tabano {
+  --bg-container-color:    pink;
+  --aspect-ratio:          100%;
+
+  grid-column: span 9;
+  grid-row: 2 / 4;
+}
+.content {
+  position: absolute;
+}
+/* 7 element */
+.container-fiji {
+  --bg-container-color:    white;
+  --aspect-ratio:          55.5%;
+
+  grid-column: span 9;
+  grid-row: 4;
+
+}
+.content {
+  position: absolute;
+}
+/* 8 element */
+.container-sesann {
+  --bg-container-color:    green;
+  --aspect-ratio:          40%;
+
+  grid-column: span 15;
+  grid-row: 5;
+
+}
+.content {
+  position: absolute;
+}
+/* 9 element */
+.container-alessi {
+  --bg-container-color:    red;
+  --aspect-ratio:          100%;
+
+  grid-column: span 6;
+  grid-row: 5;
+
+}
+.content {
+  position: absolute;
+}
+/* 10 element */
+.container-finish {
+  --bg-container-color:    orange;
+  --aspect-ratio:          66.7%;
+
+  grid-column: span 9;
+  grid-row: 5;
+
 }

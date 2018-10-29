@@ -25,7 +25,7 @@
 <body>
     <main class="wrapper">
         <header class="header-container">
-            <div class="logo-container">
+            <div class="content-header">
                 <div class="header-img">
                     <img src="images/header_chair.png" alt="chair">
                 </div>
@@ -52,16 +52,16 @@
                 </div>
             </div>
 
-            <div class="header-nav">
+            <div class="header-menu">
                 <div class="strikethrough"></div>
                 <div class="navigation">
                     <nav class="navigation-content">
                         <!--navigation goes here-->
-                        <a class="navigation-list" href="javascript:void(0);">Home</a>
-                        <a class="navigation-list" href="javascript:void(0);">Projects</a>
-                        <a class="navigation-list" href="javascript:void(0);">Studio</a>
-                        <a class="navigation-list" href="javascript:void(0);">News</a>
-                        <a class="navigation-list" href="javascript:void(0);">Contact</a>
+                        <a class="navigation-item section-item" href="javascript:void(0);">Home</a>
+                        <a class="navigation-item section-item" href="javascript:void(0);">Projects</a>
+                        <a class="navigation-item section-item" href="javascript:void(0);">Studio</a>
+                        <a class="navigation-item section-item" href="javascript:void(0);">News</a>
+                        <a class="navigation-item section-item" href="javascript:void(0);">Contact</a>
                     </nav>
                     <button class="hamburger hamburger--spin" type="button" aria-label="Menu" aria-controls="navigation-content">
                         <span class="hamburger-box">
@@ -71,33 +71,291 @@
                 </div>
 
                 <address class="address">
-                    <span>90802 California</span>
-                    <span>Long beach</span>
-                    <span>PO Box 68789</span>
-                    <span>300 East Ocean</span>
-                    <span>Boulev</span>                       
+                    90802 California<br>
+                    Long beach<br>
+                    PO Box 68789<br>
+                    300 East Ocean<br>
+                    Boulev<br>
                 </address>  
 
                 <address class="contacts">
-                    <span>+64 9 345 6758 info@dsgn-studio</span>
+                    +64 9 345 6758 info@dsgn-studio
                 </address>
             </div>
         </header>
 
-        <section class="projects">
-            <div class="child">first</div>
-            <div class="child">2</div>
-            <div class="child">3</div>
-            <div class="child">4</div>
-            <div class="child">5</div>
-            <div class="child">6</div>
-            <div class="child">7</div>
-            <div class="child">8</div>
-            <div class="child">9</div>
-            <div class="child">last</div>
+        <section class="section-projects">
+            <!-- 1-st cell (header) of the section projects -->
+            <div class="container container-projects">
+                <div class="content-projects upcase">
+                    <nav class="nav-projects">
+                        <a class="navigation-item project-item" href="javascript:void(0);">all</a>
+                        <a class="navigation-item project-item" href="javascript:void(0);">house</a>
+                        <a class="navigation-item project-item" href="javascript:void(0);">commercial</a>
+                        <a class="navigation-item project-item" href="javascript:void(0);">personal</a>
+                        <a class="navigation-item project-item" href="javascript:void(0);">studio lab</a>
+                    </nav>
+                    <span class="container-name">projects</span>
+                </div>
+            </div>
+            <!-- 2-nd cell -->
+            <div class="container container-fondue">
+                <div class="content content-fondue upcase">
+                    <h2 class="project-name">fondue</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">projects assistant</span>:francesco dompieri
+                        </li>
+                        <li>
+                            <span class="feature-name">material</span>:glass and metal
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:suspension lamp
+                        </li>
+                        <li>
+                            <span class="feature-name">client</span>:david design
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2014
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link fondue-link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <!-- 3-d cell -->
+            <div class="container container-potter">
+                <div class="content content-potter">
+                    <h2 class="project-name upcase">potter</h2>
+                    <h3 class="upcase">for stelton</h3>
+                    <p class="text-potter">
+                        <span class="feature-name">for stelton</span><br>
+                        Potter focuses on the functionality and process of preparing tea. a big sieve allows the flavor of to evenly brewed.
+                    </p>
+                    <nav class="list-links">
+                        <a class="link fondue-link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- 4th cell -->
+            <div class="container container-louis">
+                <div class="content content-louis">
+                    <h2 class="project-name upcase">louis xx</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:philippe starck
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:chairs
+                        </li>
+                        <li>
+                            <span class="feature-name">client</span>:vitra
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2012
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- 5th cell -->
+            <div class="container container-p22">
+                <div class="content content-p22">
+                    <h2 class="project-name upcase">395-396 p22</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:patrick norguet
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">client</span>:cassina
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2013
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+           <!-- 6th cell -->
+            <div class="container container-tabano">
+                <div class="content content-tabano">
+                    <h2 class="project-name upcase">tabano</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:patricia urquiola
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">client</span>:B&B italia
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2014
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div> 
+           <!-- 7th cell -->
+            <div class="container container-fiji">
+                <div class="content content-fiji">
+                    <h2 class="project-name upcase">fiji</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:cuno frommherz
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2012
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+            <!-- 8th cell -->
+            <div class="container container-sesann">
+                <div class="content content-sesann">
+                    <h2 class="project-name upcase">sesann</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:gianco
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2012
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div> 
+            <!-- 9th cell -->
+            <div class="container container-alessi">
+                <div class="content content-alessi">
+                    <h2 class="project-name upcase">alessi</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:gianco
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2012
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div> 
+            <!-- 10th cell -->
+            <div class="container container-finish container-projects">
+                <div class="content content-projec">
+                    <h2 class="project-name upcase">projec</h2>
+                    <ul class="project-features">
+                        <li>
+                            <span class="feature-name">designer</span>:gianco
+                        </li>
+                        <li>
+                            <span class="feature-name">typology</span>:armchairs
+                        </li>
+                        <li>
+                            <span class="feature-name">year</span>:2012
+                        </li>
+                    </ul>
+                    <nav class="list-links">
+                        <a class="link" href="javascript:void(0);">view project</a>
+                    </nav>
+                    <figure class="project-rating">
+                        <img class="heart-rating" src="images/icons/heart_icon.svg" alt="heart">
+                        <figcaption>
+                            +200
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div> 
+
+
+
         </section>
     </main>
 
+    
 
 </body>
 </html>
