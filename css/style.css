@@ -1000,6 +1000,10 @@ img {
     grid-column: span 30;
   }
 
+  .social-icon .bg-img {
+    object-fit: contain;
+  }
+
   .menu {
     grid-row: 2;
     color: var(--menu-bg);
