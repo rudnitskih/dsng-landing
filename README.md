@@ -1,20 +1,30 @@
-# dsng
+# Mockup DSNG
 
+To look the page, click to the [link][1]
 
-## Fonts for template
-+ first line
-    1. logo has
-    ```
-  .ASSOCIATES_STUDIO_DESIGN {
-  font-size: 18px;
-  font-family: "RobotoCondensed";
-  color: rgb(57, 61, 60);
-  text-transform: uppercase;
-  line-height: 1;
+[1]: https://ignatsemchuk.github.io/dsng/
+
+##Features
+
+All aspect ratio calculate from the mockup with 1500px width
+контейнеры в процентах высчитываются
+отступы и размеры в VW
+Look for the method to maintain the aspect ratio of a div with css:
+```
+div {
+ width: 100%;
+ padding-bottom: 75%;
+}
+
+div.stretchy-wrapper {
+  position: relative;
+}
+
+div.stretchy-wrapper > div {
   position: absolute;
-  left: 167.096px;
-  top: 276.872px;
-  z-index: 252;
-  }
-  ```
-  
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+```
+    It will result in a <div> with height equal to 75% of the width of its container (a 4:3 aspect ratio).
+    Placing content in the div :  
+    In order to keep the aspect ratio of the div and prevent its content from stretching it, you need to add an absolutely positioned child and stretch it to the edges of the wrapper with
