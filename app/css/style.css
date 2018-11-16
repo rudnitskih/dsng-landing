@@ -1108,6 +1108,7 @@ img {
 
   .project-p22 {
     grid-row: 5;
+    overflow: hidden;
   }
   .project-p22 .project-features {
     margin-left: auto;
@@ -1119,7 +1120,9 @@ img {
     width: 50%;
   }
   .project-p22 .bg-img {
-    object-position: 0 -7vw;
+    object-position: 15vw 0vw;
+    object-fit: contain;
+    transform: scale(1.4);
   }
 
   .project-tabano {
@@ -1155,7 +1158,7 @@ img {
     grid-row: 7;
   }
   .content-sesann {
-    padding: 24% 10% 5% 20%;
+    padding: 28% 10% 5% 20%;
   }
   .project-sesann .project-features {
     width: 80%;
