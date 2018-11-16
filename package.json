@@ -1,0 +1,23 @@
+{
+  "name": "dsng",
+  "version": "1.0.0",
+  "description": "To look the page, click to the [link][1]",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnatSemchuk/dsng.git"
+  },
+  "author": "Ihnat Semchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnatSemchuk/dsng/issues"
+  },
+  "homepage": "https://github.com/IgnatSemchuk/dsng#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1"
+  }
+}
