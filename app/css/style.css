@@ -782,6 +782,7 @@ img {
 .cv-position {
   font-weight: 700;
   line-height: var(--size-16);
+  font-weight: 400;
 }
 
 .cv-links {
