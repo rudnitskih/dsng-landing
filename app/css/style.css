@@ -55,7 +55,7 @@ html {
   color: var(--main-dark-color);
 }
 body {
-  background-color: red;
+  background-color: var(--body-bg);
 }
 
 a {
