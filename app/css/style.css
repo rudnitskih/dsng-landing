@@ -983,7 +983,7 @@ img {
 @media  screen and (max-width: 1200px) {
 
   .md-100-p {
-    padding-bottom: 35%;
+    padding-bottom: 40%;
     grid-column: span 30;
   }
 
@@ -1003,39 +1003,29 @@ img {
 
   .menu {
     grid-row: 2;
-    color: var(--menu-bg);
+    color: var(--main-dark-color);
   }
 
   .address,
   .contacts {
-    flex-flow: row nowrap;
-  }
-
-  .address .snippet-text,
-  .contacts .snippet-text {
-    margin: 0 0.5vw;
-    text-shadow: 0 0 0.2vw white;
-  }
-
-  .address {
-    font-size: 1.5em;
-    left: 11vw;
-    bottom: 0;
-    right:0;
-    top: -5vw;
-  }
-
-  .contacts {
+    flex-flow: column nowrap;
     font-size: 1.5em;
     right: 0;
     bottom: 0;
-    left: 70vw;
-    top: -5vw;
+    top: -8vw;
+  }
+
+  .address {
+    left: 11vw;
+  }
+
+  .contacts {
+    left: 25vw;
   }
 
   .hamburger {
     right: 8vw;
-    top: -30vw;
+    top: -36vw;
     border-color: var(--menu-bg);
   }
 
@@ -1057,7 +1047,7 @@ img {
   .main-navigation {
     font-size: 1.5em;
     right: 17vw;
-    top: -30vw;
+    top: -36vw;
   }
 
   .projects-header {
