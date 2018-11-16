@@ -875,7 +875,7 @@ img {
   grid-area: date-1;
   font-size: var(--size-12);
   line-height: var(--size-24);
-
+  color: grey;
   padding: 0 1%;
 }
 .news-2-date {
@@ -884,6 +884,7 @@ img {
   line-height: var(--size-24);
   align-self: start;
   padding: 0 1%;
+  color: grey;
 }
 
 .news-1-img {
