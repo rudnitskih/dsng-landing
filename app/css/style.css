@@ -349,10 +349,11 @@ img {
 /* Dropdown Content (Hidden by Default) */
 .main-navigation {
   width: 40vw;
-  height: 8vw;
   position: absolute;
+  height: 8vw;
   right: 19vw;
   top: 3.33vw;
+  color: #fff;
   background-color: var(--project-header-bg);
   visibility: hidden;
   opacity: 0;
@@ -367,7 +368,6 @@ img {
 .main-navigation-item {
   position: relative;
   flex: 0 0 auto;
-  color: #fff;
   transition: 0.3s ease-in-out 0s;
 }
 
@@ -1027,12 +1027,15 @@ img {
   .projects-header {
     grid-row: 3;
   }
+
   .projects-header .projects-line {
     transform: rotate(-48deg) translate(0, 40%);
   }
+
   .projects-header .projects-nav {
     transform: scale(4);
   }
+
   .projects-header .header-title {
     transform: scale(0.7) translate(100%, 300%);
   }
@@ -1235,4 +1238,153 @@ img {
     flex-flow: column nowrap;
   }
 
+}
+
+/* mobile adaptive */
+
+@media  screen and (max-width: 600px) {
+
+  .sm-100-p {
+    grid-column: span 30;
+    /*padding-bottom: 60%;*/
+  }
+
+  .header {
+    padding-bottom: 100vh;
+  }
+
+  .header > .bg-img {
+    object-fit: contain;
+    object-position: -15vw 75vw;
+    transform: scale(2);
+  }
+
+  .header .content-header {
+    width: 25vw;
+    margin: 10vw;
+  }
+  .header .socials-list {
+    margin-top: 10vw;
+  }
+  .header .social-icon {
+    height: 3.2vw;
+  }
+
+  .header .logo-title {
+    font-size: 3vw;
+    line-height: 3vw;
+  }
+
+  .address,
+  .contacts {
+    font-size: 3em;
+    left: 11vw;
+  }
+
+  .address {
+    top: -30vw;
+  }
+
+  .contacts {
+    top: -15vw;
+  }
+
+  .menu {
+    grid-row: 2;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .main-navigation {
+    width: 100vw;
+    height: 40vh;
+    font-size: 7em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -100vh;
+    visibility: visible;
+    opacity: 1;
+    color: var(--menu-bg);
+    background-color: transparent;
+    padding: 10vw;
+
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .projects-header {
+    grid-row: 3;
+  }
+
+  .project-fondue {
+    grid-row: 4;
+  }
+
+  .project-potter {
+    grid-row: 5;
+  }
+
+  .project-louis {
+    grid-row: 6;
+  }
+
+  .project-p22 {
+    grid-row: 7;
+  }
+
+  .project-fiji {
+    grid-row: 8;
+  }
+
+  .project-tabano {
+    grid-row: 9;
+  }
+
+  .project-sesann {
+    grid-row: 10;
+  }
+
+  .project-alessi {
+    grid-row: 11;
+  }
+
+  .projects-footer {
+    grid-row: 12;
+  }
+
+  .studio-header {
+    grid-row: 13;
+  }
+
+  .studio-description {
+    grid-row: 14;
+  }
+
+  .staff-header {
+    grid-row: 15;
+  }
+
+  .staff {
+    grid-row: 16;
+  }
+
+  .news-header {
+    grid-row: 17;
+  }
+
+  .news-list {
+    grid-row: 18;
+  }
+
+  .map {
+    grid-row: 19;
+  }
+
+  .footer {
+    grid-row: 20;
+  }
 }
