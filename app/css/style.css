@@ -1254,15 +1254,17 @@ img {
     overflow: hidden;
   }
 
-  .header > .bg-img {
-    object-fit: contain;
-    object-position: -15vw 75vw;
-    transform: scale(2);
+  .header .content-header {
+    width: 30%;
+    margin: 10%;
   }
 
-  .header .content-header {
-    width: 30vw;
-    margin: 10vw;
+  .header > .bg-img {
+    margin-top: 80%;
+    object-fit: cover;
+    height: 45%;
+    width: 100%;
+    object-position: 80%;
   }
   .header .socials-list {
     margin-top: 5vw;
@@ -1329,11 +1331,11 @@ img {
   }
 
   .projects-header .projects-nav {
-    transform: scale(8) translate(0, 10%);
+    transform: translate(0, 10%);
   }
 
   .projects-header .header-title {
-    transform: scale(1.5) translate(130%, 150%);
+    transform: translate(130%, 150%);
   }
 
   .content {
@@ -1472,7 +1474,7 @@ img {
     transform: rotate(-48deg) translate(0, 40%);
   }
   .projects-footer .projects-nav {
-    transform: scale(8) translate(40%, 20%);;
+    transform: scale(8) translate(40%, 20%);
   }
   .projects-footer .header-title {
     transform: scale(2) translate(100%, 100%);
@@ -1482,7 +1484,7 @@ img {
     grid-row: 13;
   }
 
-  .studio-description{
+  .studio-description {
     grid-row: 14;
     padding-bottom: 0;
   }
@@ -1513,8 +1515,7 @@ img {
     grid-row: 18;
     padding: 0 10vw;
     display: block;
-}
-  }
+  }  
 
   .map {
     grid-row: 19;
