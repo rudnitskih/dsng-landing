@@ -146,6 +146,10 @@ img {
   color: var(--main-light-color);
 }
 
+.project-louis .bg-img {
+  object-fit: cover;
+}
+
 .project-p22 {
   position: relative;
   padding-bottom: 62%;
@@ -1457,7 +1461,7 @@ img {
 
   .project-louis {
     grid-row: 6;
-    padding-bottom: 150%;
+    padding-bottom: 140%;
     overflow: hidden;
   }
 
@@ -1469,7 +1473,11 @@ img {
 
   .project-louis .bg-img {
     object-fit: cover;
-    object-position: 0 -2vh;
+    object-position: 0 -8vh;
+  }
+
+  .project-louis .rating {
+    align-self: center;
   }
 
   .project-p22 {
@@ -1551,6 +1559,7 @@ img {
 
   .project-alessi .project-features {
     height: 90%;
+    width: 40%;
   }
 
   .projects-footer {
