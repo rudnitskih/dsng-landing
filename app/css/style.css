@@ -574,7 +574,6 @@ img {
   height: 20%;
 }
 .project-p22 .features-list {
-  /*display: none;*/
   padding-top: 10%;
 }
 /* tabano */
@@ -1083,11 +1082,15 @@ img {
     grid-row: 4;
   }
   .project-louis .project-features {
-    width: 80%;
-    height: 24%;
+    flex-flow: row nowrap;
+    width: 75%;
+  }
+  .project-louis .rating {
+    align-self: flex-start;
   }
   .project-louis .bg-img {
     object-position: 0 -30vw;
+
   }
 
   .project-p22 {
@@ -1095,9 +1098,13 @@ img {
     overflow: hidden;
   }
   .project-p22 .project-features {
+    flex-flow: row nowrap;
     margin-left: auto;
+    margin-top: 0;
     width: 50%;
-    height: 24%;
+  }
+  .project-p22 .features-list {
+    padding-top: 0;
   }
   .project-p22 .project-title {
     margin-left: auto;
@@ -1150,6 +1157,9 @@ img {
 
   .project-alessi {
     grid-row: 8;
+  }
+  .content-alessi .project-link {
+     margin-left: 1.5em; 
   }
   .project-alessi .project-features {
     margin-left: auto;
@@ -1447,7 +1457,7 @@ img {
 
   .project-louis {
     grid-row: 6;
-    padding-bottom: 70vh;
+    padding-bottom: 150%;
     overflow: hidden;
   }
 
@@ -1459,7 +1469,7 @@ img {
 
   .project-louis .bg-img {
     object-fit: cover;
-    object-position: 0 -17vh;
+    object-position: 0 -2vh;
   }
 
   .project-p22 {
