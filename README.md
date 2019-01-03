@@ -1,7 +1,7 @@
 # Mockup DSNG
 To look the page, click to the [link][1]
 
-[1]: https://ignatsemchuk.github.io/dsng/app
+[1]: https://ignatsemchuk.github.io/dsng-landing/app
  
 ----
 <img src="https://raw.githubusercontent.com/IgnatSemchuk/dsng/master/app/images/dsgn-preview.jpg" alt="dsgn mockup" width="300"/>
