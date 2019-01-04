@@ -8,20 +8,42 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IgnatSemchuk/dsng.git"
+    "url": "git+https://github.com/IgnatSemchuk/dsng-landing.git"
   },
   "author": "Ihnat Semchuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IgnatSemchuk/dsng/issues"
+    "url": "https://github.com/IgnatSemchuk/dsng-landing/issues"
   },
-  "homepage": "https://github.com/IgnatSemchuk/dsng#readme",
+  "homepage": "https://github.com/IgnatSemchuk/dsng-landing#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
     "gulp": "^3.9.1",
-    "gulp-cli": "^2.0.1"
+    "gulp-cli": "^2.0.1",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3",
+    "stylelint": "^9.9.0",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.4.4"
   },
-  "dependencies": {
-    "npm": "^6.4.1"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css}": [
+      "prettier --write",
+      "stylelint --fix",
+      "git add"
+    ]
   }
 }
