@@ -40,7 +40,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,css}": [
+    "**/*.html": "prettier --write",
+    "**/*.{js,css}": [
       "prettier --write",
       "stylelint --fix",
       "git add"
