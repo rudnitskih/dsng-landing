@@ -1,5 +1,5 @@
 # Landing page DSNG
-To look the page, click to the [link][1]
+## [Demo][1]
 
 [1]: https://ignatsemchuk.github.io/dsng-landing/app
 
